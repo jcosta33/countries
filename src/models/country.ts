@@ -1,6 +1,6 @@
-import { IParams } from ".";
+import { Params } from ".";
 
-export interface CountriesParams extends IParams {
+export interface CountriesParams extends Params {
   filter?: string;
   value?: string;
 }

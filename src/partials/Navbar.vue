@@ -35,7 +35,9 @@
           <div class="navbar-item">
             <button type="button" class="button is-primary">
               <span class="icon"
-                ><i class="material-icons-outlined">radio_button_unchecked</i></span
+                ><i class="material-icons-outlined"
+                  >radio_button_unchecked</i
+                ></span
               >
               <span>Meaningless button!</span>
             </button>
@@ -47,7 +49,7 @@
 </template>
 
 <script lang="ts">
-import { defineComponent, computed } from "vue";
+import { defineComponent } from "vue";
 
 export default defineComponent({
   props: { showNavigation: Boolean },

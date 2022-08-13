@@ -1,4 +1,4 @@
-export interface IField<T> {
+export interface Field<T> {
   id: number | string;
   name: string;
   label?: string;
@@ -16,10 +16,7 @@ export interface IField<T> {
   loading?: boolean;
 }
 
-export type ICheckbox = IField<boolean>;
-export type ISwitch = IField<boolean>;
-
-export interface IInput extends IField<number | string | File> {
+export interface Input extends Field<number | string | File> {
   placeholder?: string;
   icon?: string;
   onDelete?: () => void;
@@ -29,8 +26,6 @@ export interface IInput extends IField<number | string | File> {
   maxValue?: number;
   file?: File;
 }
-
-export type IDatePicker = IField<string>;
 
 type InputType =
   | "text"
@@ -42,36 +37,13 @@ type InputType =
   | "email"
   | string;
 
-export type IRadio = IField<boolean>;
-
-export interface ISelect extends IField<string | number> {
+export interface Select extends Field<string | number> {
   default?: string;
-  options: IOption[];
+  options: Option[];
 }
 
-export interface IRadios extends IField<string> {
-  options: IOption[];
-}
-export interface ICheckboxes extends IField<string> {
-  options: IOption[];
-}
-
-export interface IVSelect extends IField<string> {
-  placeholder?: string;
-  options: IOption[];
-}
-
-export interface IOption {
+export interface Option {
   label: string;
   value: string | number;
   checked?: boolean;
 }
-
-export interface ITextarea extends IField<string> {
-  placeholder?: string;
-  maxLength?: number;
-  onInput?: (value: string | number) => void;
-  disabled?: boolean;
-}
-
-export type IDescription = IField<string>;

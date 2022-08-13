@@ -64,12 +64,12 @@
 // @ is an alias to /src
 
 import { defineComponent, PropType, watch } from "vue";
-import { ISelect } from ".";
+import { Select } from ".";
 
 export default defineComponent({
   props: {
     config: {
-      type: Object as PropType<ISelect>,
+      type: Object as PropType<Select>,
       required: true,
     },
     modelValue: [Number, String],

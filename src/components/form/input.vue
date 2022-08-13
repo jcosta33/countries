@@ -73,12 +73,12 @@
 // @ is an alias to /src
 import { defineComponent, PropType, reactive, watch } from "vue";
 
-import { IInput } from ".";
+import { Input } from ".";
 
 export default defineComponent({
   props: {
     config: {
-      type: Object as PropType<IInput>,
+      type: Object as PropType<Input>,
       required: true,
     },
     modelValue: [Number, String, Object, File],

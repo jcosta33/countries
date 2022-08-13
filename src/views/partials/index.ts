@@ -1,6 +1,6 @@
-import { IInput, ISelect } from "@/components/form";
+import { Input, Select } from "@/components/form";
 
-const filters: ISelect = {
+const filters: Select = {
   id: "filters-select",
   name: "filters_select",
   default: "Select filter",
@@ -36,7 +36,7 @@ const filters: ISelect = {
     },
   ],
 };
-const value: IInput = {
+const value: Input = {
   id: "value-select",
   name: "value_select",
   placeholder: "Portugal",
